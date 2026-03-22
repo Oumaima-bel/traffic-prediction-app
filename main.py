@@ -6,12 +6,11 @@ import osmnx as ox
 
 
 from model.map import Map
-from services.graphService import load_graph
-from services.routeService import route_data
-from services.geocodingService import fetch_places, search_places, get_coordinates, get_adresse
-from controllers.init_states_controller import set_init_state
-from controllers.get_coord_controller import on_click, select_from_map, update_dest_coord, update_start_coord
-from controllers.route_controller import compute_route
+from services.graph_service import load_graph
+from services.route_service import route_data, getShortestRoute
+from services.geocoding_service import fetch_places, search_places, get_coordinates, get_adresse
+from controllers.map_controller import set_init_state, on_click, select_from_map, update_dest_coord, update_start_coord, compute_route
+
 
 st.set_page_config(layout = "wide")
 

@@ -1,7 +1,6 @@
 import folium
 import webbrowser
-import osmnx as ox
-import networkx as nx
+
 
 
 class Map:
@@ -19,15 +18,6 @@ class Map:
     def addRoute(self,route_coord,color='blue',weight=5):
         folium.PolyLine(route_coord,color=color,weight=weight).add_to(self.map)
     
-    def getShortestRoute(self,start,finish,graph):
-
-        start_node = ox.distance.nearest_nodes(graph, start[0], start[1])
-        finish_node = ox.distance.nearest_nodes(graph, finish[0], finish[1])
-
-        route = nx.shortest_path(graph, start_node, finish_node, weight="length")
-
-        route_coord = [(graph.nodes[node]['y'], graph.nodes[node]['x']) for node in route]
-
-        return route
+    
         
 
