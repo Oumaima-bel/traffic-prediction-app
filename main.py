@@ -24,7 +24,9 @@ G = load_graph()
 set_init_state()
 
 
+
 with st.sidebar:
+    st.write("### Set the start and destination")
     start = st_searchbox(
         search_places,
         placeholder="Choose a starting place ...",
@@ -77,7 +79,7 @@ with st.sidebar:
 
 # show the map and the shortest path
 
-st.write("Map")
+st.write("### Map")
 
 my_map = st.session_state.map
 
