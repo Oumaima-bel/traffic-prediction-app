@@ -5,7 +5,7 @@ from streamlit_folium import st_folium
 import osmnx as ox
 
 
-from model.map import Map
+from services.map_service import Map
 from services.graph_service import load_graph
 from services.route_service import route_data, getShortestRoute
 from services.geocoding_service import fetch_places, search_places, get_coordinates, get_adresse
