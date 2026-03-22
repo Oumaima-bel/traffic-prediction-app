@@ -1,0 +1,19 @@
+# AI Traffic Blockage Prediction & Smart Route Recommendation System
+
+note: this app will be used only in casablanca morocco for the time being.
+
+Goal: build a system that:
+
+1- Predicts potential traffic blockages or congestion;
+
+2- Suggests alternative routes;
+
+3- Estimates travel time.
+
+
+
+Steps:
+
+
+1- make a simple app that gives the shortest route based on the user's current location (or a choosen location) and the destination.
+tools: Leaflet/Folium to create interactive maps,ipstack.com api to get the user's location, NetworkX for graph and algorithm A*, streamlit for frontend.
